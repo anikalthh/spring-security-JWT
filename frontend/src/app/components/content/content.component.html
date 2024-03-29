@@ -1,0 +1,6 @@
+<div>
+    <app-login-form (onSubmitLoginEvent)="onLogin($event)" (onSubmitRegisterEvent)="onRegister($event)"></app-login-form>
+
+    <app-welcome-msg *ngIf="componentToShow == 'welcome'"></app-welcome-msg>
+    <app-auth-content *ngIf="componentToShow == 'messages'"></app-auth-content>
+</div>
